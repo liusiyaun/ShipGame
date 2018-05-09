@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+  
+  function init(){
+    // 数值没有是 0
+    var a ;
+    document.writeln(a); //变量没有定义是 undefined
+
+    document.writeln(document.getElementById("b")); //没有找到对象 null
+
+    document.writeln(1 + "1" + 1); // 自动化类型
+    document.writeln(1 + parseInt("1") + 1); //强制类型转化 转化成整型
+    document.writeln(1 + parseFloat("1.7") + 1); // 转化成浮点型
+
+    if (undefined === null) { // 1 2 "@" ture ture == 1 undefined == null 真
+                               // 0 false true == "2" underfined === null 假
+    document.writeln("真");
+    }else{
+      document.writeln("假");
+    }
+  }
+  window.onload = init;
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
