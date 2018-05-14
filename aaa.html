@@ -27,7 +27,10 @@
 
     document.write(str.substring(startIndex,endIndex));
 
-    var ID= "321323200102145343";
+    var arrStr = "100]90]90]85]23]74]58]56]80";
+
+    var vals = arrStr.split("]");
+    document.write(vals[7]);
     
   }
   window.onload = init;
